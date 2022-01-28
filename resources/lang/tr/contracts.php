@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "Ekle",
+    "add_modal_title" => "Yeni Sözleşme Ekle",
+    "add_new" => "Yeni Ekle",
+    "add_new_title" => "Yeni Sözleşme Ekle",
+    "bring_collect_error" => "Organizasyonun açılış saatleri arasında zaman olmalıdır.",
+    "bring_until" => "Tarihine kadar getir",
+    "cancel" => "İptal",
+    "collect_until" => "Şu tarihe kadar tahsil et:",
+    "create_success_msg" => "Yeni sözleşme oluşturuldu.",
+    "delete" => "Sil",
+    "delete_success_msg" => "Sözleşme başarıyla silindi.",
+    "delete_title" => ":title'u silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "delete_top_title" => "Sözleşmeyi Sil",
+    "edit" => "Sözleşmeyi düzenle",
+    "hour" => "Saat",
+    "minute" => "Dakika",
+    "overtime" => "Gün başına fazla mesai (:type)",
+    "overtime_table" => "Fazla Mesai / Gün (:type)",
+    "search" => "Sözleşmeleri Ara...",
+    "submit" => "Gönder",
+    "time_per_day" => "Gün başına zaman (:type)",
+    "time_per_day_table" => "Saat/Gün (:type)",
+    "title" => "Sözleşmeler",
+    "title_label" => "Unvanı",
+    "title_lower" => "sözleşme",
+    "update" => "Güncelle",
+    "update_success_msg" => "Sözleşmenizin ayrıntıları güncelleştirildi."
+];

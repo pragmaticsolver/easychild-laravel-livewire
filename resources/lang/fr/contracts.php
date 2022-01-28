@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "Ajouter",
+    "add_modal_title" => "Ajouter un nouveau contrat",
+    "add_new" => "Ajouter un nouveau",
+    "add_new_title" => "Ajouter un nouveau contrat",
+    "bring_collect_error" => "L'heure doit être comprise entre les heures d'ouverture de l'organisation.",
+    "bring_until" => "Apporter jusqu'à",
+    "cancel" => "Annuler",
+    "collect_until" => "Collecter jusqu'à",
+    "create_success_msg" => "Nouveau contrat créé.",
+    "delete" => "Supprimer",
+    "delete_success_msg" => "Le contrat a été supprimé avec succès.",
+    "delete_title" => "Êtes-vous sûr de vouloir supprimer :titre ? Cette opération ne peut pas être annulée.",
+    "delete_top_title" => "Supprimer le contrat",
+    "edit" => "Modifier le contrat",
+    "hour" => "Heure",
+    "minute" => "Minute",
+    "overtime" => "Heures supplémentaires par jour (:type)",
+    "overtime_table" => "Heures supplémentaires / jour (:type)",
+    "search" => "Rechercher des contrats...",
+    "submit" => "Soumettre",
+    "time_per_day" => "Heure par jour (:type)",
+    "time_per_day_table" => "Temps / Jour (:type)",
+    "title" => "Contrats",
+    "title_label" => "Titre",
+    "title_lower" => "contrats",
+    "update" => "Mettre à jour",
+    "update_success_msg" => "Le détail de votre contrat a été mis à jour."
+];

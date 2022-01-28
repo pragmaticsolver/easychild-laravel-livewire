@@ -1,0 +1,84 @@
+version: '3.8'
+
+networks:
+    laravel:
+        driver: bridge
+        name: laravel
+
+volumes:
+    laravelmariadb:
+        driver: local
+    laravelredis:
+        driver: local
+
+services:
+    nginx:
+        build:
+            context: ./docker/nginx
+            dockerfile: Dockerfile
+        container_name: nginx
+        depends_on:
+            - php
+            - mysql
+            - redis
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - laravel
+
+    php:
+        build:
+            context: ./docker/php
+            dockerfile: Dockerfile
+        container_name: php
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - laravel
+
+    npm:
+        build:
+            context: ./docker/npm
+            dockerfile: Dockerfile
+        container_name: npm
+        volumes:
+            - ./:/var/www/html
+        working_dir: /var/www/html
+        entrypoint: ['start-container']
+        networks:
+            - laravel
+
+    mysql:
+        image: 'mariadb:10.5.9'
+        ports:
+            - '${FORWARD_DB_PORT:-3306}:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_DATABASE: '${DB_DATABASE}'
+            MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        volumes:
+            - 'laravelmariadb:/var/lib/mysql'
+        networks:
+            - laravel
+
+    redis:
+        image: 'redis:alpine'
+        ports:
+            - '${FORWARD_REDIS_PORT:-6379}:6379'
+        volumes:
+            - 'laravelredis:/data'
+        networks:
+            - laravel
+
+    mailhog:
+        image: 'mailhog/mailhog:latest'
+        ports:
+            - 1025:1025
+            - 8025:8025
+        networks:
+            - laravel

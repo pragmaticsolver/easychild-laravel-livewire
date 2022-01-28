@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "hinzufügen",
+    "add_modal_title" => "Neuen Vertrag hinzufügen",
+    "add_new" => "Neu hinzufügen",
+    "add_new_title" => "Neuen Vertrag hinzufügen",
+    "bring_collect_error" => "Die Zeit sollte zwischen den Öffnungszeiten der Einrichtung liegen.",
+    "bring_until" => "Früheste Abgabezeit",
+    "cancel" => "Abbrechen",
+    "collect_until" => "Späteste Abholzeit",
+    "create_success_msg" => "Neuen Vertrag erstellt",
+    "delete" => "Löschen",
+    "delete_success_msg" => "Kontakt erfolgreich gelöscht.",
+    "delete_title" => "Sind Sie sicher, dass Sie :title löschen möchten? Dies kann nicht rückgängig gemacht werden.",
+    "delete_top_title" => "Vertrag löschen",
+    "edit" => "Vertrag bearbeiten",
+    "hour" => "Stunde",
+    "minute" => "Minute",
+    "overtime" => "Kulanz bei Zeitüberschreitung (:type)",
+    "overtime_table" => "Mehrzeit / Tag (:type)",
+    "search" => "Verträge suchen",
+    "submit" => "Senden",
+    "time_per_day" => "Zeit pro Tag (:type)",
+    "time_per_day_table" => "Zeit / Tag (:type)",
+    "title" => "Verträge",
+    "title_label" => "Titel",
+    "title_lower" => "Verträge",
+    "update" => "Aktualisieren",
+    "update_success_msg" => "Die Angaben zu Ihrem Vertrag wurden aktualisiert"
+];

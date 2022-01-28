@@ -1,0 +1,61 @@
+name: kindergarten
+recipe: laravel
+
+config:
+  webroot: public
+  php: '7.4'
+  via: nginx
+  database: 'postgres:10'
+  xdebug: true
+  cache: redis
+
+services:
+  appserver:
+    scanner: false
+    composer:
+    overrides:
+      ports:
+        - '22'
+    build_as_root:
+      - apt-get update -y
+      - apt install openssh-server libgmp-dev -y
+      - docker-php-ext-install gmp
+      - mkdir /run/sshd
+      - passwd www-data -d
+      - echo "password\npassword" | passwd www-data
+      - sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config
+      - sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+      - service ssh reload
+    run_as_root:
+      - service ssh start
+    build:
+      - composer install
+    run:
+      - php artisan migrate:fresh --seed
+
+  node:
+    type: node:12
+    build:
+      - npm install
+      - npm run dev
+
+  database:
+    portforward: 5432
+    creds:
+      database: kindergarten
+
+  cache:
+    portforward: 6379
+
+  mailhog:
+    type: mailhog:v1.0.0
+    hogfrom:
+      - appserver
+
+tooling:
+  npm:
+    service: node
+
+  phpunit:
+    service: appserver
+    cmd: ./vendor/bin/phpunit

@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "Ekle",
+    "add_new" => "Yeni Ekle",
+    "add_new_title" => "Yeni Kuruluş Ekle",
+    "address" => "Adres",
+    "city" => "Şehir",
+    "collector_popup" => "Çocuk kasasında çocuğu alacak kişi belirtilmelidir.",
+    "create_success" => "Adı geçen yeni kuruluş: :name yarattı.",
+    "edit" => "Kuruluşu Düzenle",
+    "food_message_time_label" => "Günlük beslenme sahada kilit süresi",
+    "groups" => "Gruplar",
+    "house_no" => "Ev No",
+    "informations_service" => "Bilgi Özelliği",
+    "messages_service" => "Mesaj Özelliği",
+    "name" => "Adı",
+    "phone" => "Telefon No",
+    "profile_care_option" => "Profil bakımı seçeneği (Bir günde daha fazla bakım, günün başka bir gününde daha az bakımla ücretlendirilebilir)e same month)",
+    "profile_title" => "Kuruluş Profili",
+    "schedule" => "Kuruluş Zamanlamalarını Görüntüle",
+    "schedule_message_time_label" => "Günlük plan kilit süresi",
+    "search" => "Kuruluşları Ara...",
+    "street" => "Sokak",
+    "title" => "Organizasyonlar",
+    "title_lower" => "kuruluşlar",
+    "update" => "Güncelle",
+    "update_success" => "Kuruluşunuzun ayrıntıları güncelleştirildi.",
+    "users" => "Kullanıcılar",
+    "zip_code" => "Posta Kodu"
+];

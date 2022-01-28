@@ -1,0 +1,12 @@
+.food-label {
+    &:before {
+        content: attr(data-food-label);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        font-size: 12px;
+        transform: rotate(-90deg);
+        transform-origin: left center;
+        white-space: nowrap;
+    }
+}

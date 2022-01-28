@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "Add",
+    "add_modal_title" => "Add New Contract",
+    "add_new" => "Add New",
+    "add_new_title" => "Add New Contract",
+    "bring_collect_error" => "Time should be between organization opening times.",
+    "bring_until" => "Bring until",
+    "cancel" => "Cancel",
+    "collect_until" => "Collect until",
+    "create_success_msg" => "New contract created.",
+    "delete" => "Delete",
+    "delete_success_msg" => "Successfully deleted contract.",
+    "delete_title" => "Are you sure want to delete :title? This cannot be reverted.",
+    "delete_top_title" => "Delete Contract",
+    "edit" => "Edit contract",
+    "hour" => "Hour",
+    "minute" => "Minute",
+    "overtime" => "Overtime per day (:type)",
+    "overtime_table" => "Overtime / Day (:type)",
+    "search" => "Search Contracts...",
+    "submit" => "Submit",
+    "time_per_day" => "Time per day (:type)",
+    "time_per_day_table" => "Time / Day (:type)",
+    "title" => "Contracts",
+    "title_label" => "Title",
+    "title_lower" => "contracts",
+    "update" => "Update",
+    "update_success_msg" => "Your contract's detail was updated."
+];

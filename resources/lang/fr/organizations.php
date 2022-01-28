@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "Ajouter",
+    "add_new" => "Ajouter nouveau",
+    "add_new_title" => "Ajouter une nouvelle organisation",
+    "address" => "Adresse",
+    "city" => "Ville",
+    "collector_popup" => "Lors de la sortie de l'enfant, la personne qui récupère l'enfant doit être indiquée.",
+    "create_success" => "Nouvelle organisation avec le nom : :nom créé.",
+    "edit" => "Modifier l'organisation",
+    "food_message_time_label" => "Temps de verrouillage quotidien sur site",
+    "groups" => "Groupes",
+    "house_no" => "Maison Non",
+    "informations_service" => "Fonction d'information",
+    "messages_service" => "Message Feature",
+    "name" => "Nom",
+    "phone" => "N° de téléphone",
+    "profile_care_option" => "Option de soins du profil (Plus de soins un jour peuvent être facturés avec moins de soins un autre jour du même mois)",
+    "profile_title" => "Profil de l'organisation",
+    "schedule" => "Visualisation des horaires de l'organisation",
+    "schedule_message_time_label" => "Verrouillage de l'horaire quotidien",
+    "search" => "Rechercher des organisations...",
+    "street" => "Rue",
+    "title" => "Organisations",
+    "title_lower" => "organisations",
+    "update" => "Mettre à jour",
+    "update_success" => "Les détails de votre organisation ont été mis à jour.",
+    "users" => "Utilisateurs",
+    "zip_code" => "Code postal"
+];

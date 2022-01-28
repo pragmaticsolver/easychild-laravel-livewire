@@ -1,0 +1,130 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://unpkg.com/tailwindcss/dist/base.css
+ */
+@tailwind base;
+
+/**
+ * Remove the default box-shadow for invalid elements to prevent
+ * inputs in Livewire components showing with a
+ * red border by default in Firefox.
+ *
+ * See: https://github.com/laravel-frontend-presets/tall/issues/7
+ */
+ input:invalid, textarea:invalid, select:invalid {
+    box-shadow: none;
+}
+
+/**
+ * This injects any component classes registered by plugins.
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ */
+
+@import '../../node_modules/croppie/croppie.css';
+@import '../../node_modules/flatpickr/dist/flatpickr.css';
+
+@import 'loading';
+@import 'inputs';
+@import 'toaster';
+@import 'food-label';
+@import 'custom-scrollbar';
+
+.message-area-rotation {
+    transform: rotate(180deg);
+    direction: rtl;
+
+    > * {
+        transform: rotate(180deg);
+        direction: ltr;
+    }
+}
+
+.bg-gradient {
+    background: rgb(233,0,127);
+    background: linear-gradient(110deg, rgba(233,0,127,1) 0%, rgba(254,161,52,1) 100%);
+}
+
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ */
+
+
+ /* quicksand-300 - latin */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/quicksand-v21-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/quicksand-v21-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/quicksand-v21-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/quicksand-v21-latin-300.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/quicksand-v21-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/quicksand-v21-latin-300.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+/* quicksand-regular - latin */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/quicksand-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/quicksand-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/quicksand-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/quicksand-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/quicksand-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/quicksand-v21-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+.font-quicksand {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+.bg-white-logo {
+    background-image: url('../img/easychild-white.svg');
+    background-size: auto 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@responsive {
+    .block-imp {
+        display: block !important;
+    }
+
+    .flex-imp {
+        display: flex !important;
+    }
+
+    .visible-imp {
+        visibility: visible !important;
+    }
+}

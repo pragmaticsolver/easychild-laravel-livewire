@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "Añadir",
+    "add_new" => "Añadir nuevo",
+    "add_new_title" => "Añadir nueva organización",
+    "address" => "Dirección",
+    "city" => "Ciudad",
+    "collector_popup" => "En la salida del niño debe indicarse la persona que lo recoge",
+    "create_success" => "Nueva organización con nombre: :name creado.",
+    "edit" => "Editar la organización",
+    "food_message_time_label" => "Comidas diarias en el sitio tiempo de bloqueo",
+    "groups" => "Grupos",
+    "house_no" => "Casa No",
+    "informations_service" => "Función de información",
+    "messages_service" => "Característica de los mensajes",
+    "name" => "Nombre",
+    "phone" => "Número de teléfono",
+    "profile_care_option" => "Opción de atención de perfil (más atención en un día puede cobrarse con menos atención en otro día del mismo mes)",
+    "profile_title" => "Perfil de la organización",
+    "schedule" => "Ver los horarios de la organización",
+    "schedule_message_time_label" => "Tiempo de bloqueo del programa diario",
+    "search" => "Buscar organizaciones...",
+    "street" => "Calle",
+    "title" => "Organizaciones",
+    "title_lower" => "Organizaciones",
+    "update" => "Actualización",
+    "update_success" => "Los datos de su organización fueron actualizados.",
+    "users" => "Usuarios",
+    "zip_code" => "Código postal"
+];

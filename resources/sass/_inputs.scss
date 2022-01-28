@@ -1,0 +1,35 @@
+.text-field {
+    @apply appearance-none outline-none block w-full px-3 py-2 border border-gray-300 rounded-md transition duration-150 ease-in-out text-sm leading-5;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &.error {
+        @apply border-red-300 text-red-900;
+
+        &:focus {
+            @apply border-red-300 shadow-outline-red;
+        }
+    }
+}
+
+.select-field {
+    @apply outline-none block w-full pl-3 py-2 border border-gray-300 rounded-md transition duration-150 ease-in-out text-sm leading-5;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &.error {
+        @apply border-red-300 text-red-900;
+
+        &:focus {
+            @apply border-red-300 shadow-outline-red;
+        }
+    }
+
+    &.time-picker {
+        background-position: right 0.2rem center;
+    }
+}

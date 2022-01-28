@@ -1,0 +1,31 @@
+<?php
+
+return [
+    "add" => "إضافة",
+    "add_modal_title" => "إضافة عقد جديد",
+    "add_new" => "إضافة جديد",
+    "add_new_title" => "إضافة عقد جديد",
+    "bring_collect_error" => "يجب أن يكون الوقت بين أوقات فتح المؤسسة.",
+    "bring_until" => "إحضار حتى",
+    "cancel" => "إلغاء",
+    "collect_until" => "التجميع حتى",
+    "create_success_msg" => "تم إنشاء عقد جديد.",
+    "delete" => "حذف",
+    "delete_success_msg" => "تم حذف العقد بنجاح.",
+    "delete_title" => "هل تريد بالتأكيد حذف: العنوان؟ لا يمكن عكس ذلك",
+    "delete_top_title" => "حذف العقد",
+    "edit" => "تحرير العقد",
+    "hour" => "ساعة",
+    "minute" => "دقيقة",
+    "overtime" => "العمل الإضافي في اليوم (:type)",
+    "overtime_table" => "العمل الإضافي / اليوم (:type)",
+    "search" => "عقود البحث...",
+    "submit" => "إرسال",
+    "time_per_day" => "الوقت في اليوم (:type)",
+    "time_per_day_table" => "الوقت / اليوم (:type)",
+    "title" => "العقود",
+    "title_label" => "العنوان",
+    "title_lower" => "تحديث الحدث",
+    "update" => "\nتحديث",
+    "update_success_msg" => "تم تحديث تفاصيل العقد."
+];
